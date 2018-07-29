@@ -2,7 +2,7 @@
 
 # java-validator
 
-This is a helper library in order to validate null value of members of the Java class at Class level. It is intended to reduce boilerplate code i.e. it reduces the time frame to check the values of indiviual members of the class by using multiple conditional statements. We can even check the object at hierarchical level i.e. the members of the member object can also be validated at the same time. We can also provide a custom message that is to be displayed whenever validation fails. It can check null and empty object of Array, CharSequence, Collection, Map.
+This is a helper library in order to validate null and empty value of members of the Java class at Class level. It is intended to reduce boilerplate code i.e. it reduces the time frame to check the values of indiviual members of the class by using multiple conditional statements. We can even check the object at hierarchical level i.e. the members of the member object can also be validated at the same time. We can also provide a custom message that is to be displayed whenever validation fails. It can check null and empty object of Array, CharSequence, Collection, Map.
 
 ## Adding to project
 
@@ -26,9 +26,10 @@ in pom.xml
 ## Simple usage
 Annotate the class with members that you need to validate,
 validation result will come in BindingResult object.
+you can also add your custom message in 'message' attribute,shown when validation fails.
 
 ```
-@CheckForNull(required="name,age,address,address.street")
+@CheckForNull(required="{name,age,address,address.street}")
 public class Person {
 	String name;
 	Integer age;
