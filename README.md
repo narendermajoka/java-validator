@@ -49,6 +49,7 @@ public ResponseEntity<Response> getPersonAddress(@Valid @RequestBody
 ```
 ## Links
 * [Maven-central](https://maven-badges.herokuapp.com/maven-central/com.github.imNirav.java.validator/java-validator) - Dependency Management
+* [Tutorial](https://github.com/imNirav/java-validator-tutorial) - Sample Project
 
 ## License
 
