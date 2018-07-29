@@ -29,7 +29,7 @@ validation result will come in BindingResult object.
 you can also add your custom message in 'message' attribute,shown when validation fails.
 
 ```
-@CheckForNull(required="{name,age,address,address.street}")
+@CheckForNull(required= {"name","age","address","address.streetName"})
 public class Person {
 	String name;
 	Integer age;
